@@ -1,0 +1,78 @@
+<html lang="es" style="height: 100%;">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="./logo.PNG">
+        <LINK REL=StyleSheet HREF="estilos.css" TYPE="text/css" MEDIA=screen>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav">
+                <div class="nav-pt1">
+                    <img src="./imagen.PNG">
+                </div>
+                <div class="nav-pt2">
+                    <ul>
+                        <li>SERVICES</li>
+                        <li>ABOUT</li>
+                        <li>CONTACT</li>
+                    </ul>
+                </div>
+                <div class="nav-pt3">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                    <input type="text" placeholder="SEARCH">
+                </div>
+            </div>
+            <div class="pt1">
+                <div class="pt1-1">
+                    <div><p>Marketing Agency</p></div>
+                </div>
+                <div class="pt1-2">
+                    WE B
+                    <div class="img1"></div>
+                    <div class="img2"></div>
+                    ST</div>
+                <div class="pt1-3">
+                    YOUR 
+                    <div>
+                        <p>Lets Talk</p>
+                        
+                        <span class="material-symbols-outlined">
+                            east
+                        </span>
+                    </div>
+                </div>
+                <div class="pt1-4">BUSINESS</div>
+            </div>
+            <div class="pt2">
+                <div class="pt2-1" id="circle">EXPLORE OUR BEST LATEST CASES ·</div>
+                <script>
+                    circle = document.getElementById("circle");
+                    circlearray = circle.textContent.split("");
+                    circle.textContent = ""
+                    for(var i = 0; i<circlearray.length;i++){
+                        if( circlearray[i] == "·"){
+                            circle.innerHTML +="<span style='transform:rotate("+((i+1)*10.8)+"deg);font-size:30px;margin-top:-89px;'>"+circlearray[i]+"</span>";
+                        }
+                        else{
+                            circle.innerHTML +="<span style='transform:rotate("+((i+1)*10.8)+"deg);font-size:10px;'>"+circlearray[i]+"</span>";
+                        }
+                    }
+                </script>
+                <div class="pt2-2">
+                </div>
+                <div class="pt2-3">
+                    <div class="pt2-3-1">$<h1>3m</h1></div>
+                    <p class="pt2-3-2">REVENUE OF OUR CLIENTS</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
